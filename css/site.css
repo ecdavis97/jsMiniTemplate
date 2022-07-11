@@ -1,8 +1,9 @@
 :root{
     --ecd-secondary-color: #baf0e6;
     --ecd-dark-color: #293533;
-    --ecd-primary-color: #40514e;
-    --ecd-light-color: #ffffff;
+    --ecd-primary-color: #536b64;
+    --ecd-light-color: rgba(255, 255, 255, 0.63);
+    --ecd-nav-toggler-glow: rgba(73, 182, 128, 0.63);
 }
 
 /* sticky footer setup start*/
@@ -17,9 +18,58 @@ body{
 
 .content{
     flex: 1 0 auto;
+    margin-top: 3rem;
 }
 
 .footer{
     flex-shrink: 0;
+    background-color: var(--ecd-dark-color);
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--ecd-primary-color)
 }
 /* sticky footer setup end*/
+
+/*nav bar overrides*/
+#mainNav{
+    background: var(--ecd-dark-color);
+}
+
+#mainNav button{
+    border-color: var(--ecd-light-color);
+}
+
+.navbar-toggler-icon-ecd{
+    color: var(--ecd-secondary-color);
+}
+.navbar-toggler{
+    color: var(--ecd-nav-toggler-glow) !important;
+}
+/*navbar overrides end*/
+
+.checklist{
+    list-style-type: none;
+}
+
+.checklist>li i{
+color: var(--ecd-primary-color)
+}
+
+.devicons{
+    font-size: 3.5rem;
+}
+
+.social{
+    font-size: 2.5rem;
+
+}
+
+.social>a{
+    color: var(--ecd-secondary-color);
+    opacity: .75;
+}
+
+.social>a:hover{
+    color: var(--ecd-nav-toggler-glow)
+}
