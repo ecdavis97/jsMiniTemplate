@@ -1,0 +1,25 @@
+:root{
+    --ecd-secondary-color: #baf0e6;
+    --ecd-dark-color: #293533;
+    --ecd-primary-color: #40514e;
+    --ecd-light-color: #ffffff;
+}
+
+/* sticky footer setup start*/
+html, body{
+    height:100%
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1 0 auto;
+}
+
+.footer{
+    flex-shrink: 0;
+}
+/* sticky footer setup end*/
