@@ -2,7 +2,7 @@
     --ecd-secondary-color: #baf0e6;
     --ecd-dark-color: #293533;
     --ecd-primary-color: #536b64;
-    --ecd-light-color: rgba(255, 255, 255, 0.63);
+    --ecd-light-color: rgba(139, 238, 164, 0.63);
     --ecd-nav-toggler-glow: rgba(73, 182, 128, 0.63);
 }
 
@@ -47,6 +47,37 @@ body{
     color: var(--ecd-nav-toggler-glow) !important;
 }
 /*navbar overrides end*/
+
+/*button overrides*/
+.btn-primary{
+    color: white !important;
+    background-color: var(--ecd-dark-color) !important;
+    border-color: var(--ecd-secondary-color) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus{
+    filter: brightness(1.5) !important;
+    border-color: var(--ecd-secondary-color) !important;
+}
+
+.btn-outline-primary{
+    color: var(--ecd-dark-color) !important;
+    border-color: var(--ecd-primary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus{
+    color: var(--ecd-secondary-color);
+    border-color: var(--ecd-primary-color);
+    background-color: var(--ecd-light-color);
+}
+
+
+/*button overrides end*/
 
 .checklist{
     list-style-type: none;
